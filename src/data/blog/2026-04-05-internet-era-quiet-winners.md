@@ -10,12 +10,6 @@ tags:
 draft: false
 ---
 
-# The Internet Era's Quiet Winners
-
-*How non-tech incumbents built moats nobody noticed — and why it's happening again right now*
-
----
-
 The most consequential technology bet of the internet era wasn't made by Amazon. It wasn't Google, or Netscape, or any of the companies whose names defined the era.
 
 It was made in Bentonville, Arkansas, by a retailer who had already been quietly building data infrastructure since 1988.
