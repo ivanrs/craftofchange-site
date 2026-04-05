@@ -48,18 +48,29 @@ Token type: Account API Token (not user token) — created under Manage Account 
 
 ## Deployment
 
+### Auto-deploy (active ✅)
+The site is connected to GitHub via Cloudflare Pages Git integration.
+**Every push to `main` triggers an automatic build and deploy.** No manual step needed.
+
+Build config (set in Cloudflare Pages dashboard):
+- Framework: Astro
+- Build command: `npm run build`
+- Output directory: `dist`
+- Node version: 20 (env var NODE_VERSION=20)
+
 ### Publish a new article
 ```bash
 # 1. Write article in Obsidian → save to projects/craftofchange/content/drafts/
 # 2. When ready: copy to the site repo
-cp projects/craftofchange/content/drafts/YYYY-MM-DD-slug.md \
-   projects/craftofchange-site/src/data/blog/
+cp /Users/ivan/.openclaw/workspace/projects/craftofchange/content/drafts/YYYY-MM-DD-slug.md \
+   /Users/ivan/.openclaw/workspace/projects/craftofchange-site/src/data/blog/
 
-# 3. Deploy
-bash scripts/deploy-pages.sh projects/craftofchange-site craftofchange-site "New article: title"
+# 3. Commit and push — Cloudflare auto-deploys
+cd /Users/ivan/.openclaw/workspace/projects/craftofchange-site
+git add -A && git commit -m "New article: title" && git push
 ```
 
-### Update the site (any change)
+### Manual deploy (fallback only)
 ```bash
 bash /Users/ivan/.openclaw/workspace/scripts/deploy-pages.sh \
   /Users/ivan/.openclaw/workspace/projects/craftofchange-site \
