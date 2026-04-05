@@ -3,7 +3,7 @@ export const SITE = {
   author: "Ivan Rapin-Smith",
   profile: "",
   desc: "For transformation leaders who study and improve their craft.",
-  title: "Craft of Change",
+  title: "The Craft of Change",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
