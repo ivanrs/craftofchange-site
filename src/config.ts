@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://craftofchange.com",
   author: "Ivan Rapin-Smith",
   profile: "",
-  desc: "How established organisations absorb technology change — and what history tells us about the present",
+  desc: "For transformation leaders who study and improve their craft.",
   title: "Craft of Change",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
