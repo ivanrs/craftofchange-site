@@ -1,0 +1,92 @@
+---
+interface Props {
+  heading?: string;
+  subheading?: string;
+}
+
+const {
+  heading = "Get the newsletter",
+  subheading = "Grounded in history. Built for today. Delivered to your inbox.",
+} = Astro.props;
+---
+
+<div class="email-signup my-8 rounded-lg border border-border bg-card p-6">
+  <h2 class="mb-2 text-xl font-semibold">{heading}</h2>
+  <p class="mb-4 text-foreground/70">{subheading}</p>
+  <form
+    id="signup-form"
+    class="flex flex-col gap-3 sm:flex-row sm:items-start"
+  >
+    <input
+      type="email"
+      id="email-input"
+      name="email"
+      placeholder="your@email.com"
+      required
+      class="flex-1 rounded border border-border bg-background px-4 py-2 text-sm text-foreground placeholder:text-foreground/40 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+    />
+    <button
+      type="submit"
+      id="signup-btn"
+      class="rounded bg-accent px-5 py-2 text-sm font-medium text-background transition-opacity hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-50"
+    >
+      Subscribe
+    </button>
+  </form>
+  <p
+    id="signup-success"
+    class="mt-3 hidden text-sm text-green-600 dark:text-green-400"
+  >
+    You're in. Welcome to Craft of Change.
+  </p>
+  <p id="signup-error" class="mt-3 hidden text-sm text-red-500">
+    Something went wrong. Please try again.
+  </p>
+</div>
+
+<script>
+  function initSignup() {
+    const form = document.getElementById("signup-form") as HTMLFormElement | null;
+    const emailInput = document.getElementById("email-input") as HTMLInputElement | null;
+    const btn = document.getElementById("signup-btn") as HTMLButtonElement | null;
+    const successMsg = document.getElementById("signup-success") as HTMLElement | null;
+    const errorMsg = document.getElementById("signup-error") as HTMLElement | null;
+
+    if (!form || !emailInput || !btn || !successMsg || !errorMsg) return;
+
+    form.addEventListener("submit", async (e: Event) => {
+      e.preventDefault();
+      const email = emailInput.value.trim();
+      if (!email) return;
+
+      btn.disabled = true;
+      btn.textContent = "Subscribing…";
+      successMsg.classList.add("hidden");
+      errorMsg.classList.add("hidden");
+
+      try {
+        const res = await fetch("/api/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email }),
+        });
+
+        if (res.ok) {
+          successMsg.classList.remove("hidden");
+          form.reset();
+          btn.textContent = "Subscribed!";
+        } else {
+          errorMsg.classList.remove("hidden");
+          btn.disabled = false;
+          btn.textContent = "Subscribe";
+        }
+      } catch {
+        errorMsg.classList.remove("hidden");
+        btn.disabled = false;
+        btn.textContent = "Subscribe";
+      }
+    });
+  }
+
+  document.addEventListener("astro:page-load", initSignup);
+</script>
