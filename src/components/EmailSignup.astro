@@ -65,15 +65,14 @@ const {
       errorMsg.classList.add("hidden");
 
       try {
+        // Use Beehiiv's embed form endpoint (CORS-safe, no API key needed)
+        const formData = new FormData();
+        formData.append('email', email);
         const res = await fetch(
-          "https://api.beehiiv.com/v2/publications/pub_f6323534-c4b9-429f-b945-cba97e4c38e0/subscriptions",
+          "https://embeds.beehiiv.com/api/v1/publications/pub_f6323534-c4b9-429f-b945-cba97e4c38e0/subscriptions",
           {
             method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "Authorization": "Bearer a3tMj6lVH4JdgFfbxT5wq1TMStZfffAW2JuMlHEKlTQZbjWCQFdFof4Z2ngjMXX5",
-            },
-            body: JSON.stringify({ email, reactivate_existing: true, send_welcome_email: true }),
+            body: formData,
           }
         );
 
