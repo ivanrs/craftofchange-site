@@ -65,14 +65,12 @@ const {
       errorMsg.classList.add("hidden");
 
       try {
-        // Use Beehiiv's embed form endpoint (CORS-safe, no API key needed)
-        const formData = new FormData();
-        formData.append('email', email);
         const res = await fetch(
-          "https://embeds.beehiiv.com/api/v1/publications/pub_f6323534-c4b9-429f-b945-cba97e4c38e0/subscriptions",
+          "https://coc-subscribe.i-rapinsmith.workers.dev",
           {
             method: "POST",
-            body: formData,
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email }),
           }
         );
 
