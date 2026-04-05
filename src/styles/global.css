@@ -9,7 +9,7 @@ html[data-theme="light"] {
   --foreground: #282728;
   --accent: #006cac;
   --muted: #e6e6e6;
-  --border: #ece9e9;
+  --border: #c8c4c4;
 }
 
 html[data-theme="dark"] {
