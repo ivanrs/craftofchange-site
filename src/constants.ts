@@ -19,7 +19,7 @@ interface Social {
 export const SOCIALS: Social[] = [
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/ivanrs/",
+    href: "https://www.linkedin.com/in/ivanrapinsmith/",
     linkTitle: `${SITE.title} on LinkedIn`,
     icon: IconLinkedin,
   },
