@@ -6,7 +6,7 @@
 
 ## Live URLs
 
-- **Site:** https://craftofchange-site.pages.dev *(custom domain: craftofchange.com — pending)*
+- **Site:** https://craftofchange.com (also: https://craftofchange-site.pages.dev)
 - **GitHub:** https://github.com/ivanrs/craftofchange-site
 - **Newsletter:** https://craftofchange.beehiiv.com
 - **Subscribe Worker:** https://coc-subscribe.i-rapinsmith.workers.dev
