@@ -1,5 +1,5 @@
 ---
-title: "The Internet Era's Quiet Winners"
+title: "The Data Moat Playbook: How Non-Tech Incumbents Won the Internet Era — And What It Means for AI"
 pubDatetime: 2026-04-05T08:00:00.000Z
 description: "How non-tech incumbents built moats nobody noticed — and why it's happening again right now"
 tags:
