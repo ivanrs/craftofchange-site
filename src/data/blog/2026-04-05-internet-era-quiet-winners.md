@@ -1,5 +1,5 @@
 ---
-title: "The Data Moat Playbook: How Non-Tech Incumbents Won the Internet Era — And What It Means for AI"
+title: "The Data Moat Playbook: How Non-Tech Incumbents Won the Internet Era — And the Lesson for the AI Era"
 pubDatetime: 2026-04-05T08:00:00.000Z
 description: "How non-tech incumbents built moats nobody noticed — and why it's happening again right now"
 tags:
