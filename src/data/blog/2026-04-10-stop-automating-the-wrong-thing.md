@@ -10,6 +10,8 @@ tags:
 draft: false
 ---
 
+*What Ford, FedEx, Progressive, and Dell understood about technology that most AI deployments still don't.*
+
 ---
 
 In 1993, Ford Motor Company had 500 people processing invoices in accounts payable.
