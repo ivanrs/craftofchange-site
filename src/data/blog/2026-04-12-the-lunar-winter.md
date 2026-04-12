@@ -1,5 +1,5 @@
 ---
-title: "The Lunar Winter"
+title: "The Lunar Winter: What It Took to Go Back"
 subtitle: "Why We Stopped Going to the Moon — and What It Reveals About How Change Actually Happens"
 pubDatetime: 2026-04-12T19:00:00.000Z
 description: "NASA had the capability to return to the Moon for fifty years before anyone did. The gap wasn't technology — it was the conditions that turn capability into action. Every organization has its own lunar winter."
