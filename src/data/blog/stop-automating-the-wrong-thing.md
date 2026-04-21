@@ -153,5 +153,3 @@ Most processes are. Most of them were designed around constraints that no longer
 Which means the more useful question isn't "what can AI do?" It's: "what constraint did we build this process around — and is that constraint still real?"
 
 Answer that honestly, and the redesign usually becomes obvious.
-
-The question is whether anyone in your organisation has the standing, the nerve, and the time to ask it.
