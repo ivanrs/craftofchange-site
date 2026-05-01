@@ -62,12 +62,4 @@ The transformation was invisible while it happened. No press release in 2003 ann
 
 ---
 
-## From the Blog
-
-**[Stop Automating the Wrong Thing](/stop-automating-the-wrong-thing/)** — Ford didn't speed up invoice processing. FedEx didn't make deliveries faster. Each one noticed a technology had opened a new door and walked through it. The FedEx MOBIUS story is this pattern happening right now.
-
-**[The Data Moat Playbook: How Non-Tech Incumbents Won the Internet Era](/internet-era-quiet-winners/)** — Morgan Stanley built DevGen.AI because no commercial tool could read their code. Capital One built their own credit models because no external dataset matched theirs. The pattern isn't new — and it keeps winning.
-
----
-
 *Four signals this week: healthcare's most hated bottleneck eliminated, a legacy code backlog finally moving, FedEx predicting failures instead of fixing them, and Dimon giving everyone a benchmark to measure against.*
