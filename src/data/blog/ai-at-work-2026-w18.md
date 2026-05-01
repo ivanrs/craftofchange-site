@@ -18,7 +18,7 @@ Four stories this week about AI stopping being a pilot and starting to compound.
 
 **UnitedHealth / OptumRx — Healthcare — Prior authorizations in 30 seconds instead of 8 hours**
 
-OptumRx's PreCheck AI processes prior authorizations at intake — before a human reviewer sees it. The previous average was over eight hours; the new average is under 30 seconds. Complex cases still route to human oversight. Denials from missing information dropped 68%. Appeals dropped 88%. The shift isn't faster review — it's no review. PreCheck decides at intake; humans only see the cases the model flags.
+OptumRx's PreCheck AI processes prior authorizations at intake — before a human reviewer sees it. The previous average was over eight hours; the new average is under 30 seconds. Complex cases still route to human oversight. Denials from missing information dropped 68%. Appeals dropped 88%. The shift isn't faster review — it's no review for most cases. PreCheck decides at intake; humans only see the cases the model flags.
 
 [UnitedHealth Q1 2026 Earnings Call, April 21, 2026](https://www.fool.com/earnings/call-transcripts/2026/04/21/unitedhealth-unh-q1-2026-earnings-transcript/)
 
@@ -42,7 +42,7 @@ FedEx's MOBIUS platform reads sensor data from sortation equipment across 41 sur
 
 **JPMorgan Chase — Financial Services — Jamie Dimon just gave every enterprise AI program a benchmark to measure against**
 
-"Our $2 billion AI investment has already matched its cost in savings." That's Dimon, Q1 2026, saying publicly what most CEOs won't. GenAI is now deployed across all 240,000 JPMorgan employees. Over 1 million automated code reviews completed this year. Most enterprise AI programs are still in the "investing for the long term" phase of board presentation. JPMorgan just posted the number that ends that conversation.
+"Our $2 billion AI investment has already matched its cost in savings." That's Dimon, Q1 2026, saying publicly what most CEOs won't. GenAI is now deployed across all 240,000 JPMorgan employees. Over 1 million automated code reviews completed this year. Most enterprise AI programs are still in the “investing for the long term” phase of board presentation. JPMorgan just posted the number that ends that conversation.
 
 [Business Insider, April 21, 2026](https://www.businessinsider.com/wall-street-banks-ai-strategy-jpmorgan-goldman-citi-bofa-2026)
 
