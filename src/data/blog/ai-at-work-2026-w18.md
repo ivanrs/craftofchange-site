@@ -42,7 +42,7 @@ FedEx's MOBIUS platform reads sensor data from sortation equipment across 41 sur
 
 **JPMorgan Chase — Financial Services — Jamie Dimon just gave every enterprise AI program a benchmark to measure against**
 
-"Our $2 billion AI investment has already matched its cost in savings." That's Dimon, Q1 2026, saying publicly what most CEOs won't. GenAI is now deployed across all 240,000 JPMorgan employees. Over 1 million automated code reviews completed this year. Most enterprise AI programs are still in the “investing for the long term” phase of board presentation. JPMorgan just posted the number that ends that conversation.
+"We have shown that for $2 billion of expense, we have about $2 billion of benefit. It's the tip of the iceberg." That's Dimon, in a Bloomberg TV interview in October 2025, saying publicly what most CEOs won't. GenAI is now deployed across all 240,000 JPMorgan employees. Over 1 million automated code reviews completed this year. Most enterprise AI programs are still in the “investing for the long term” phase of board presentation. JPMorgan just posted the number that ends that conversation.
 
 [Business Insider, April 21, 2026](https://www.businessinsider.com/wall-street-banks-ai-strategy-jpmorgan-goldman-citi-bofa-2026)
 
