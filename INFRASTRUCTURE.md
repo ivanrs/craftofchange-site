@@ -8,7 +8,7 @@
 
 - **Site:** https://craftofchange.com (also: https://craftofchange-site.pages.dev)
 - **GitHub:** https://github.com/ivanrs/craftofchange-site
-- **Newsletter:** https://craftofchange.beehiiv.com
+- **Newsletter:** https://newsletter.craftofchange.com (also: https://craftofchange.beehiiv.com)
 - **Subscribe Worker:** https://coc-subscribe.i-rapinsmith.workers.dev
 
 ---
@@ -148,3 +148,4 @@ Move file from drafts → site repo → deploy. Then archive a copy in `content/
 - [ ] Add Beehiiv welcome email sequence
 - [ ] Add LinkedIn social link to site config (`src/config.ts`)
 - [ ] Delete the test@example.com subscriber from Beehiiv
+- [ ] **Sources & Research section** — collapsible section at the bottom of each article listing sources used. Closed by default. Also include a line "This article draws on N entries from The Digital Ratchet" with a link — credibility signal + DR flywheel. Needs custom Astro component. Data already exists in research JSONs.
