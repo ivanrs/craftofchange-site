@@ -13,7 +13,7 @@ import { SITE } from "@/config";
 export const getStaticPaths = (async ({ paginate }) => {
   const posts = await getCollection(
     "blog",
-    ({ data }) => !data.draft && data.type === "weekly-pulse"
+    ({ data }) => !data.draft && data.type === "ai-at-work"
   );
   return paginate(getSortedPosts(posts), { pageSize: SITE.postPerPage });
 }) satisfies GetStaticPaths;
@@ -21,11 +21,11 @@ export const getStaticPaths = (async ({ paginate }) => {
 const { page } = Astro.props;
 ---
 
-<Layout title={`Weekly Pulse | ${SITE.title}`}>
+<Layout title={`AI at Work | ${SITE.title}`}>
   <Header />
   <Main
-    pageTitle="Weekly Pulse"
-    pageDesc="A weekly digest of real AI deployments across industries — specific companies, real numbers, and a historical pattern that makes the present more legible."
+    pageTitle="AI at Work"
+    pageDesc="Real AI deployments across industries — specific companies, real numbers, and a historical pattern that makes the present more legible."
   >
     <ul>
       {page.data.map(data => <Card {...data} />)}

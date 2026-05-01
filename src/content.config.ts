@@ -20,7 +20,7 @@ const blog = defineCollection({
       canonicalURL: z.string().optional(),
       hideEditPost: z.boolean().optional(),
       timezone: z.string().optional(),
-      type: z.enum(["article", "weekly-pulse"]).default("article"),
+      type: z.enum(["article", "ai-at-work"]).default("article"),
     }),
 });
 

@@ -1,10 +1,10 @@
 ---
-title: "Weekly Pulse — Week 18, 2026"
+title: "AI at Work — W18"
 pubDatetime: 2026-05-01T12:00:00Z
 description: "Four stories about AI stopping being a pilot and starting to compound: OptumRx, Morgan Stanley, FedEx, and Jamie Dimon's benchmark."
-type: weekly-pulse
+type: ai-at-work
 tags:
-  - weekly-pulse
+  - ai-at-work
   - ai-adoption
   - healthcare
   - financial-services
