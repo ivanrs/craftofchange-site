@@ -60,27 +60,27 @@ Build config (set in Cloudflare Pages dashboard):
 
 ### Publish a new article
 ```bash
-# 1. Write article in Obsidian → save to projects/craftofchange/content/drafts/
+# 1. Write article in Obsidian → save to projects/craftofchange/articles/legacy-content/drafts/
 # 2. When ready: copy to the site repo
-cp /Users/ivan/.openclaw/workspace/projects/craftofchange/content/drafts/YYYY-MM-DD-slug.md \
-   /Users/ivan/.openclaw/workspace/projects/craftofchange-site/src/data/blog/
+cp /Users/ivan/.openclaw/workspace/projects/craftofchange/articles/legacy-content/drafts/YYYY-MM-DD-slug.md \
+   /Users/ivan/.openclaw/workspace/projects/craftofchange/site/src/data/blog/
 
 # 3. Commit and push — Cloudflare auto-deploys
-cd /Users/ivan/.openclaw/workspace/projects/craftofchange-site
+cd /Users/ivan/.openclaw/workspace/projects/craftofchange/site
 git add -A && git commit -m "New article: title" && git push
 ```
 
 ### Manual deploy (fallback only)
 ```bash
 bash /Users/ivan/.openclaw/workspace/scripts/deploy-pages.sh \
-  /Users/ivan/.openclaw/workspace/projects/craftofchange-site \
+  /Users/ivan/.openclaw/workspace/projects/craftofchange/site \
   craftofchange-site \
   "Your commit message"
 ```
 
 ### Redeploy the subscribe Worker
 ```bash
-cd projects/craftofchange-site
+cd projects/craftofchange/site
 CLOUDFLARE_API_TOKEN=$(security find-generic-password -s "cloudflare-api-token" -a "openclaw" -w) \
 CLOUDFLARE_ACCOUNT_ID=$(security find-generic-password -s "cloudflare-account-id" -a "openclaw" -w) \
   wrangler deploy worker/subscribe.js --name coc-subscribe
@@ -132,9 +132,9 @@ The Worker exists purely to avoid CORS — browsers can't call the Beehiiv API d
 
 ```
 Obsidian (write in markdown)
-    → projects/craftofchange/content/drafts/   ← working drafts
-    → projects/craftofchange/content/published/ ← archive of published pieces
-    → projects/craftofchange-site/src/data/blog/ ← live on site
+    → projects/craftofchange/articles/legacy-content/drafts/   ← working drafts
+    → projects/craftofchange/articles/legacy-content/published/ ← archive of published pieces
+    → projects/craftofchange/site/src/data/blog/ ← live on site
 ```
 
 Move file from drafts → site repo → deploy. Then archive a copy in `content/published/`.

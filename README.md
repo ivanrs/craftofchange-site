@@ -70,7 +70,7 @@ See `INFRASTRUCTURE.md` for full details on credentials, the subscribe Worker, a
 ## Content Pipeline
 
 ```
-projects/craftofchange/content/drafts/   ← working drafts (Obsidian)
+projects/craftofchange/articles/legacy-content/drafts/   ← working drafts (Obsidian)
     ↓  copy when ready
 src/data/blog/                           ← live articles
     ↓  git push
