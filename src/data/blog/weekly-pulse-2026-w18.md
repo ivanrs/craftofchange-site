@@ -16,8 +16,6 @@ Four stories this week about AI stopping being a pilot and starting to compound.
 
 ---
 
-## This Week's AI at Work
-
 **UnitedHealth / OptumRx — Healthcare — Prior authorizations in 30 seconds instead of 8 hours**
 
 OptumRx's PreCheck AI processes prior authorizations at intake — before a human reviewer sees it. The previous average was over eight hours; the new average is under 30 seconds. Complex cases still route to human oversight. Denials from missing information dropped 68%. Appeals dropped 88%. The shift isn't faster review — it's no review. PreCheck decides at intake; humans only see the cases the model flags.
@@ -50,9 +48,7 @@ FedEx's MOBIUS platform reads sensor data from sortation equipment across 41 sur
 
 ---
 
-## The Throwback
-
-**Capital One — 1994 to 2015 — Building a bank on the thesis that credit is a data problem**
+**Throwback: Capital One — 1994 to 2015 — Building a bank on the thesis that credit is a data problem**
 
 In 1994, Rich Fairbank and Nigel Morris convinced Signet Bank to spin out a credit card company built around a single contrarian idea: that credit approval — universally treated as a judgment call by experienced underwriters — was actually a data problem. If you had enough history on how borrowers behaved, a model would outperform the rules committee. Signet backed them. Most of the industry thought it was eccentric.
 
