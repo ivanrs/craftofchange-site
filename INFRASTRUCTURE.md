@@ -1,6 +1,6 @@
 # Craft of Change — Infrastructure Reference
 
-*Last updated: 2026-04-05*
+*Last updated: 2026-05-03*
 
 ---
 
@@ -30,10 +30,10 @@
 
 | Service | Keychain key | Account |
 |---------|-------------|---------|
-| Cloudflare API token | `cloudflare-api-token` | `openclaw` |
-| Cloudflare account ID | `cloudflare-account-id` | `openclaw` |
-| Beehiiv API key | `beehiiv-api-key` | `openclaw` |
-| Beehiiv publication ID | `beehiiv-publication-id` | `openclaw` |
+| Cloudflare API token | `cloudflare-api-token` | `craftofchange` |
+| Cloudflare account ID | `cloudflare-account-id` | `craftofchange` |
+| Beehiiv API key | `beehiiv-api-key` | `craftofchange` |
+| Beehiiv publication ID | `beehiiv-publication-id` | `craftofchange` |
 | GitHub PAT | `github-pat` | `ivanrs` |
 
 Raw values also in `projects/craftofchange/API Keys.md` (local only, never commit).
@@ -62,27 +62,28 @@ Build config (set in Cloudflare Pages dashboard):
 ```bash
 # 1. Write article in Obsidian → save to projects/craftofchange/articles/legacy-content/drafts/
 # 2. When ready: copy to the site repo
-cp /Users/ivan/.openclaw/workspace/projects/craftofchange/articles/legacy-content/drafts/YYYY-MM-DD-slug.md \
-   /Users/ivan/.openclaw/workspace/projects/craftofchange/site/src/data/blog/
+cp /Users/ivan/craftofchange/pipeline/briefs/YYYY-WNN-NNN-topic/article/YYYY-MM-DD-slug.md \
+   /Users/ivan/craftofchange/site/src/data/blog/
 
 # 3. Commit and push — Cloudflare auto-deploys
-cd /Users/ivan/.openclaw/workspace/projects/craftofchange/site
+cd /Users/ivan/craftofchange/site
 git add -A && git commit -m "New article: title" && git push
 ```
 
 ### Manual deploy (fallback only)
 ```bash
-bash /Users/ivan/.openclaw/workspace/scripts/deploy-pages.sh \
-  /Users/ivan/.openclaw/workspace/projects/craftofchange/site \
-  craftofchange-site \
-  "Your commit message"
+cd /Users/ivan/craftofchange/site
+npm run build
+CLOUDFLARE_API_TOKEN=$(security find-generic-password -s "cloudflare-api-token" -a "craftofchange" -w) \
+CLOUDFLARE_ACCOUNT_ID=$(security find-generic-password -s "cloudflare-account-id" -a "craftofchange" -w) \
+  wrangler pages deploy dist --project-name craftofchange-site
 ```
 
 ### Redeploy the subscribe Worker
 ```bash
-cd projects/craftofchange/site
-CLOUDFLARE_API_TOKEN=$(security find-generic-password -s "cloudflare-api-token" -a "openclaw" -w) \
-CLOUDFLARE_ACCOUNT_ID=$(security find-generic-password -s "cloudflare-account-id" -a "openclaw" -w) \
+cd /Users/ivan/craftofchange/site
+CLOUDFLARE_API_TOKEN=$(security find-generic-password -s "cloudflare-api-token" -a "craftofchange" -w) \
+CLOUDFLARE_ACCOUNT_ID=$(security find-generic-password -s "cloudflare-account-id" -a "craftofchange" -w) \
   wrangler deploy worker/subscribe.js --name coc-subscribe
 ```
 
